@@ -1,0 +1,25 @@
+<!-- @dsCard group="Spacing" viewport="700x180" name="Radius & borders" subtitle="Slightly rounded corners — hairline borders, no pills on containers" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--bg-app); font-family: var(--font-mono); color: var(--text-muted); padding: 26px; }
+  .row { display: flex; gap: 16px; }
+  .cell { display: flex; flex-direction: column; gap: 8px; align-items: center; }
+  .box { width: 80px; height: 70px; background: var(--surface-card); border: var(--border-card); }
+  .lbl { font-size: 10px; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="cell"><div class="box" style="border-radius:var(--radius-xs)"></div><span class="lbl">xs · 4</span></div>
+    <div class="cell"><div class="box" style="border-radius:var(--radius-sm)"></div><span class="lbl">sm · 6</span></div>
+    <div class="cell"><div class="box" style="border-radius:var(--radius-md)"></div><span class="lbl">md · 10</span></div>
+    <div class="cell"><div class="box" style="border-radius:var(--radius-lg)"></div><span class="lbl">lg · 14</span></div>
+    <div class="cell"><div class="box" style="border-radius:var(--radius-xl)"></div><span class="lbl">xl · 20</span></div>
+    <div class="cell"><div class="box" style="border-radius:var(--radius-pill);width:70px;border-color:var(--green-line)"></div><span class="lbl">pill</span></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- @dsCard group="Colors" viewport="700x190" name="Brand greens" subtitle="Primary, secondary, accent — the only chromatic accent" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--bg-app); font-family: var(--font-ui); color: var(--text-body); padding: 24px; }
+  .row { display: flex; gap: 14px; }
+  .swatch { flex: 1; border-radius: var(--radius-md); overflow: hidden; border: var(--border-card); }
+  .chip { height: 84px; }
+  .meta { padding: 10px 12px; background: var(--surface-card); }
+  .name { font-size: var(--text-sm); font-weight: var(--fw-medium); color: var(--text-strong); }
+  .hex { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-muted); margin-top: 3px; text-transform: uppercase; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="swatch">
+      <div class="chip" style="background: var(--green-primary); box-shadow: var(--glow-md);"></div>
+      <div class="meta"><div class="name">Primary</div><div class="hex">#4ade80</div></div>
+    </div>
+    <div class="swatch">
+      <div class="chip" style="background: var(--green-secondary);"></div>
+      <div class="meta"><div class="name">Secondary</div><div class="hex">#22c55e</div></div>
+    </div>
+    <div class="swatch">
+      <div class="chip" style="background: var(--green-accent);"></div>
+      <div class="meta"><div class="name">Accent</div><div class="hex">#10b981</div></div>
+    </div>
+  </div>
+</body>
+</html>

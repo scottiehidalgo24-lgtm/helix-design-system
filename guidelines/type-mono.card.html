@@ -1,0 +1,24 @@
+<!-- @dsCard group="Type" viewport="700x200" name="Mono — JetBrains Mono" subtitle="Code, API keys, token counts, metrics" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--bg-app); font-family: var(--font-mono); padding: 24px; }
+  .term { background: var(--surface-inset); border: var(--border-card); border-radius: var(--radius-md); padding: 16px 18px; font-size: 13px; line-height: 1.7; }
+  .c-key { color: var(--text-faint); }
+  .c-str { color: var(--green-primary); }
+  .c-num { color: var(--info); }
+  .c-fn { color: var(--ink-050); }
+  .prompt { color: var(--green-accent); }
+</style>
+</head>
+<body>
+  <div class="term">
+    <div><span class="prompt">$</span> <span class="c-fn">helix</span> deploy llama-3.1-70b <span class="c-key">--region</span> <span class="c-str">eu-west</span></div>
+    <div style="color:var(--text-muted)">→ endpoint <span class="c-str">ready</span> in <span class="c-num">8.2s</span></div>
+    <div style="margin-top:8px"><span class="c-key">balance</span>: <span class="c-num">2_480_000</span> tokens · <span class="c-key">rate</span>: <span class="c-num">$0.0004</span>/1k</div>
+  </div>
+</body>
+</html>

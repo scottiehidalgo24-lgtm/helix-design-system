@@ -1,0 +1,32 @@
+<!-- @dsCard group="Colors" viewport="700x160" name="Semantic feedback" subtitle="Status colors with translucent fills for dark surfaces" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--bg-app); font-family: var(--font-ui); color: var(--text-body); padding: 24px; }
+  .row { display: flex; gap: 12px; }
+  .pill { flex: 1; border-radius: var(--radius-md); padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
+  .dot { width: 14px; height: 14px; border-radius: 50%; }
+  .name { font-size: var(--text-sm); font-weight: var(--fw-medium); color: var(--text-strong); }
+  .hex { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); text-transform: uppercase; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="pill" style="background: var(--success-soft); border: 1px solid var(--green-line);">
+      <div class="dot" style="background: var(--success)"></div><span class="name">Success</span><span class="hex">#10b981</span>
+    </div>
+    <div class="pill" style="background: var(--warning-soft); border: 1px solid rgba(246,196,84,.3);">
+      <div class="dot" style="background: var(--warning)"></div><span class="name">Warning</span><span class="hex">#f6c454</span>
+    </div>
+    <div class="pill" style="background: var(--danger-soft); border: 1px solid rgba(240,80,107,.3);">
+      <div class="dot" style="background: var(--danger)"></div><span class="name">Danger</span><span class="hex">#f0506b</span>
+    </div>
+    <div class="pill" style="background: var(--info-soft); border: 1px solid rgba(74,168,222,.3);">
+      <div class="dot" style="background: var(--info)"></div><span class="name">Info</span><span class="hex">#4aa8de</span>
+    </div>
+  </div>
+</body>
+</html>

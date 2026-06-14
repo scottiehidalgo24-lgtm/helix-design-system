@@ -1,0 +1,50 @@
+/* Helix effects — radii, borders, shadows, neon glow, blur, motion.
+   Corners are slightly rounded (premium, not pill-y). Elevation is conveyed
+   by darker insets + hairline borders + occasional green glow, not soft drop
+   shadows (this is a dark UI). */
+
+:root {
+  /* Radius */
+  --radius-xs:  4px;
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  14px;
+  --radius-xl:  20px;
+  --radius-2xl: 28px;
+  --radius-pill: 999px;
+
+  /* Borders */
+  --border-hairline: 1px solid var(--ink-600);
+  --border-card:     1px solid var(--ink-600);
+  --border-glow:     1px solid var(--green-line);
+
+  /* Shadows — dark, low-spread */
+  --shadow-sm:  0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md:  0 4px 16px rgba(0, 0, 0, 0.45);
+  --shadow-lg:  0 16px 48px rgba(0, 0, 0, 0.55);
+  --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+  /* Neon green glow — for active/focused accents & the logo */
+  --glow-sm:  0 0 0 3px rgba(74, 222, 128, 0.16);
+  --glow-md:  0 0 18px rgba(74, 222, 128, 0.30);
+  --glow-lg:  0 0 36px rgba(74, 222, 128, 0.40);
+  --glow-text: 0 0 18px rgba(74, 222, 128, 0.45);
+
+  /* Focus ring */
+  --ring: 0 0 0 3px rgba(74, 222, 128, 0.32);
+
+  /* Blur */
+  --blur-sm: 8px;
+  --blur-md: 16px;
+  --blur-lg: 28px;
+
+  /* Motion — quick, confident, no bounce */
+  --ease-out:   cubic-bezier(0.22, 1, 0.36, 1); /* @kind other */
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --dur-fast:   120ms; /* @kind other */
+  --dur-base:   180ms; /* @kind other */
+  --dur-slow:   320ms; /* @kind other */
+
+  /* Background field — faint dotted bio-grid */
+  --grid-dot: rgba(74, 222, 128, 0.05);
+}

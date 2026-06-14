@@ -1,0 +1,29 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Neutral ramp" subtitle="Near-black surfaces and text — the dark-tech foundation" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--bg-app); font-family: var(--font-mono); color: var(--text-muted); padding: 24px; }
+  .ramp { display: grid; grid-template-columns: repeat(10, 1fr); gap: 8px; }
+  .cell { display: flex; flex-direction: column; gap: 8px; align-items: center; }
+  .chip { width: 100%; height: 56px; border-radius: var(--radius-sm); border: 1px solid var(--ink-600); }
+  .lbl { font-size: 10px; letter-spacing: 0.02em; }
+</style>
+</head>
+<body>
+  <div class="ramp">
+    <div class="cell"><div class="chip" style="background:#0a0a0a"></div><span class="lbl">bg-0</span></div>
+    <div class="cell"><div class="chip" style="background:#121314"></div><span class="lbl">900</span></div>
+    <div class="cell"><div class="chip" style="background:#17181a"></div><span class="lbl">800</span></div>
+    <div class="cell"><div class="chip" style="background:#1d1f22"></div><span class="lbl">700</span></div>
+    <div class="cell"><div class="chip" style="background:#26282c"></div><span class="lbl">600</span></div>
+    <div class="cell"><div class="chip" style="background:#34373c"></div><span class="lbl">500</span></div>
+    <div class="cell"><div class="chip" style="background:#6b7077"></div><span class="lbl">300</span></div>
+    <div class="cell"><div class="chip" style="background:#9aa0a8"></div><span class="lbl">200</span></div>
+    <div class="cell"><div class="chip" style="background:#c9cdd2"></div><span class="lbl">100</span></div>
+    <div class="cell"><div class="chip" style="background:#e9ebed"></div><span class="lbl">050</span></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Helix — Brand</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg-app); color: var(--text-body);
+    font-family: var(--font-ui); -webkit-font-smoothing: antialiased;
+    background-image:
+      radial-gradient(110% 70% at 85% -5%, rgba(74,222,128,0.10), transparent 55%),
+      radial-gradient(var(--grid-dot) 1.3px, transparent 1.3px);
+    background-size: auto, 24px 24px;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 28px; }
+  header.hero { padding: 110px 0 80px; }
+  .eyebrow { font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: var(--tracking-caps); color: var(--green-primary); margin-bottom: 26px; }
+  .lock { height: 60px; margin-bottom: 36px; }
+  h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(38px, 6vw, 72px); line-height: 1.0; letter-spacing: -0.025em; color: var(--text-strong); margin: 0; max-width: 16ch; }
+  h1 em { font-style: normal; background: linear-gradient(100deg, var(--green-primary), var(--green-accent)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .sub { font-size: var(--text-lg); color: var(--text-muted); max-width: 56ch; line-height: var(--leading-normal); margin-top: 26px; }
+
+  section { padding: 46px 0; border-top: 1px solid var(--border-subtle); }
+  .sec-label { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: var(--tracking-caps); color: var(--text-faint); margin-bottom: 26px; }
+
+  .logos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .tile { border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 34px 20px; min-height: 170px; }
+  .tile.dark { background: var(--bg-0); }
+  .tile.glow { background: radial-gradient(circle at 50% 42%, rgba(74,222,128,0.12), transparent 70%), var(--bg-0); }
+  .tile.light { background: #f2f3f4; }
+  .tile span { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-faint); }
+  .tile.light span { color: #999; }
+
+  .palette { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .sw { border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); }
+  .sw .c { height: 92px; }
+  .sw .m { padding: 12px 14px; background: var(--surface-card); }
+  .sw .n { font-size: 13px; font-weight: 500; color: var(--text-strong); }
+  .sw .h { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); text-transform: uppercase; margin-top: 3px; }
+
+  .type-row { display: flex; align-items: baseline; gap: 18px; padding: 12px 0; border-bottom: 1px solid var(--ink-700); }
+  .type-row:last-child { border: 0; }
+  .type-row .t { color: var(--text-strong); font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em; }
+  .type-row .meta { margin-left: auto; font-family: var(--font-mono); font-size: 11px; color: var(--green-primary); }
+
+  .links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  a.card { display: block; text-decoration: none; border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); background: var(--surface-card); padding: 20px; transition: border-color var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out); }
+  a.card:hover { border-color: var(--green-line); transform: translateY(-2px); box-shadow: var(--glow-md); }
+  a.card .ct { font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--text-strong); }
+  a.card .cd { font-size: 13px; color: var(--text-faint); margin-top: 6px; line-height: 1.5; }
+  footer { padding: 50px 0 80px; border-top: 1px solid var(--border-subtle); color: var(--text-faint); font-family: var(--font-mono); font-size: 12px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="eyebrow">Design System</div>
+      <img class="lock" src="assets/logo/helix-lockup.svg" alt="Helix">
+      <h1>The platform for <em>shipping intelligence</em></h1>
+      <p class="sub">Prepaid tokens, one-command model deployment, and a console that feels like a terminal grew a beautiful UI. Dark-tech, bio-inspired, precise.</p>
+    </header>
+
+    <section>
+      <div class="sec-label">Logo · the helix H</div>
+      <div class="logos">
+        <div class="tile dark"><img src="assets/logo/helix-mark.svg" style="width:96px;height:96px" alt="mark"><span>Primary mark</span></div>
+        <div class="tile glow"><img src="assets/logo/helix-mark-dark.svg" style="width:118px;height:118px" alt="app icon"><span>App icon · glow</span></div>
+        <div class="tile light"><img src="assets/logo/helix-mark.svg" style="width:96px;height:96px" alt="on light"><span>On light</span></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="sec-label">Color · one accent, near-black everything else</div>
+      <div class="palette">
+        <div class="sw"><div class="c" style="background:#4ade80;box-shadow:var(--glow-md)"></div><div class="m"><div class="n">Primary</div><div class="h">#4ade80</div></div></div>
+        <div class="sw"><div class="c" style="background:#22c55e"></div><div class="m"><div class="n">Secondary</div><div class="h">#22c55e</div></div></div>
+        <div class="sw"><div class="c" style="background:#10b981"></div><div class="m"><div class="n">Accent</div><div class="h">#10b981</div></div></div>
+        <div class="sw"><div class="c" style="background:#0a0a0a;border-bottom:1px solid var(--ink-600)"></div><div class="m"><div class="n">Background</div><div class="h">#0a0a0a</div></div></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="sec-label">Type · Space Grotesk + JetBrains Mono</div>
+      <div class="type-row"><span class="t" style="font-size:46px">Deploy in seconds</span><span class="meta">Display · 700</span></div>
+      <div class="type-row"><span class="t" style="font-size:24px;font-weight:500">Metered inference</span><span class="meta">UI · 500</span></div>
+      <div class="type-row"><span class="t" style="font-size:16px;font-weight:400">Pay only for the tokens you use.</span><span class="meta">Body · 400</span></div>
+      <div class="type-row"><span style="font-family:var(--font-mono);font-size:14px;color:var(--green-primary)">$ helix deploy llama-3.1-70b --region eu-west</span><span class="meta">Mono · 400</span></div>
+    </section>
+
+    <section>
+      <div class="sec-label">Explore the system</div>
+      <div class="links">
+        <a class="card" href="ui_kits/console/index.html"><div class="ct">Console UI kit →</div><div class="cd">The full developer dashboard: overview, models, endpoints, playground.</div></a>
+        <a class="card" href="readme.md"><div class="ct">Design guide →</div><div class="cd">Voice, visual foundations, iconography, and the manifest.</div></a>
+        <a class="card" href="guidelines/brand-lockup.card.html"><div class="ct">Brand assets →</div><div class="cd">Mark, wordmark, and lockups on light and dark.</div></a>
+      </div>
+      <p style="font-family:var(--font-mono);font-size:12px;color:var(--text-faint);margin-top:18px">The Design System tab shows every token, type, color, and component card. The Console UI kit and component cards render once the component bundle finishes compiling.</p>
+    </section>
+
+    <footer>HELIX · dark-tech, bio-inspired AI platform · #4ade80</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!-- @dsCard group="Brand" viewport="700x230" name="Wordmark & lockup" subtitle="HELIX in Space Grotesk bold; horizontal lockup" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--bg-app); font-family: var(--font-mono); color: var(--text-faint); padding: 26px; display: flex; flex-direction: column; gap: 16px; }
+  .panel { border-radius: var(--radius-lg); border: var(--border-card); display: flex; align-items: center; gap: 18px; padding: 22px 26px; }
+  .dark { background: var(--bg-0); }
+  .light { background: #f2f3f4; }
+  .lbl { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; margin-left: auto; }
+  .light .lbl { color: #999; }
+</style>
+</head>
+<body>
+  <div class="panel dark"><img src="../assets/logo/helix-lockup.svg" alt="lockup" style="height:54px"><span class="lbl">Lockup · dark</span></div>
+  <div class="panel light"><img src="../assets/logo/helix-lockup-dark.svg" alt="lockup light" style="height:54px"><span class="lbl">Lockup · light</span></div>
+  <div class="panel dark"><img src="../assets/logo/helix-wordmark.svg" alt="wordmark" style="height:40px"><span class="lbl">Wordmark</span></div>
+</body>
+</html>

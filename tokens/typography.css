@@ -1,0 +1,38 @@
+/* Helix typography — Space Grotesk for display & UI, JetBrains Mono for code. */
+
+:root {
+  --font-display: "Space Grotesk", "Geist", system-ui, sans-serif;
+  --font-ui:      "Space Grotesk", system-ui, -apple-system, sans-serif;
+  --font-mono:    "JetBrains Mono", "SF Mono", ui-monospace, monospace;
+
+  /* Weights */
+  --fw-regular: 400; /* @kind font */
+  --fw-medium:  500; /* @kind font */
+  --fw-bold:    700; /* @kind font */
+
+  /* Type scale (px in rem-friendly steps) */
+  --text-xs:   12px;
+  --text-sm:   13px;
+  --text-base: 15px;
+  --text-md:   17px;
+  --text-lg:   20px;
+  --text-xl:   24px;
+  --text-2xl:  30px;
+  --text-3xl:  38px;
+  --text-4xl:  48px;
+  --text-5xl:  62px;
+  --text-6xl:  82px;
+
+  /* Line heights */
+  --leading-tight:   1.05;
+  --leading-snug:    1.2;
+  --leading-normal:  1.45;
+  --leading-relaxed: 1.65;
+
+  /* Letter spacing */
+  --tracking-tight:  -0.02em;
+  --tracking-snug:   -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.04em;
+  --tracking-caps:   0.12em; /* uppercase eyebrows / labels */
+}

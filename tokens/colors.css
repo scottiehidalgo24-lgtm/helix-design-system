@@ -1,0 +1,67 @@
+/* Helix color system — dark-tech, bio-inspired.
+   Brand greens are the only chromatic accent; everything else is a near-black
+   neutral ramp. Use semantic aliases in product code, raw scales for tooling. */
+
+:root {
+  /* ---- Brand greens (exact) ---- */
+  --green-primary:   #4ade80; /* neon spring green — primary accent, logo */
+  --green-secondary: #22c55e; /* deeper green — hover, fills */
+  --green-accent:    #10b981; /* emerald — gradients, helix rungs, success */
+
+  /* Tints / shades for states & surfaces */
+  --green-300:       #6ee7a8;
+  --green-400:       #4ade80;
+  --green-500:       #22c55e;
+  --green-600:       #16a34a;
+  --green-700:       #15803d;
+  --green-soft:      rgba(74, 222, 128, 0.12); /* translucent fill */
+  --green-soft-2:    rgba(74, 222, 128, 0.06);
+  --green-line:      rgba(74, 222, 128, 0.28); /* glowing border */
+
+  /* ---- Neutral ramp (near-black -> white) ---- */
+  --bg-0:  #0a0a0a; /* base background (exact) */
+  --bg-1:  #0e0f10; /* page gutters */
+  --ink-900: #121314; /* raised surface */
+  --ink-800: #17181a; /* card */
+  --ink-700: #1d1f22; /* card hover / inset */
+  --ink-600: #26282c; /* border strong */
+  --ink-500: #34373c; /* border, divider */
+  --ink-400: #4b4f56; /* disabled stroke */
+  --ink-300: #6b7077; /* muted icon */
+  --ink-200: #9aa0a8; /* secondary text */
+  --ink-100: #c9cdd2; /* primary-dim text */
+  --ink-050: #e9ebed; /* high text */
+  --white:   #ffffff;
+
+  /* ---- Semantic feedback ---- */
+  --danger:   #f0506b;
+  --danger-soft: rgba(240, 80, 107, 0.14);
+  --warning:  #f6c454;
+  --warning-soft: rgba(246, 196, 84, 0.14);
+  --info:     #4aa8de;
+  --info-soft: rgba(74, 168, 222, 0.14);
+  --success:  var(--green-accent);
+  --success-soft: var(--green-soft);
+
+  /* ---- Semantic aliases (use these in product code) ---- */
+  --bg-app:        var(--bg-0);
+  --bg-gutter:     var(--bg-1);
+  --surface-raised: var(--ink-900);
+  --surface-card:  var(--ink-800);
+  --surface-hover: var(--ink-700);
+  --surface-inset: #0c0d0e;
+
+  --border-subtle: var(--ink-600);
+  --border-strong: var(--ink-500);
+  --border-focus:  var(--green-line);
+
+  --text-strong:   var(--ink-050);
+  --text-body:     var(--ink-100);
+  --text-muted:    var(--ink-200);
+  --text-faint:    var(--ink-300);
+  --text-on-accent:#06231a; /* dark ink on neon green */
+
+  --accent:        var(--green-primary);
+  --accent-hover:  var(--green-secondary);
+  --accent-press:  var(--green-600);
+}

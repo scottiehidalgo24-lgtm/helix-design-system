@@ -1,0 +1,40 @@
+<!-- @dsCard group="Console" viewport="1320x840" name="Helix Console" subtitle="Developer dashboard — overview, models, endpoints, playground" -->
+<!-- @startingPoint section="Console" subtitle="Full developer dashboard shell" viewport="1320x840" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Helix Console</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg-app); }
+  body { font-family: var(--font-ui); }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-thumb { background: var(--ink-600); border-radius: 6px; border: 2px solid var(--bg-app); }
+  ::-webkit-scrollbar-track { background: transparent; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<script type="text/babel" src="Icons.jsx"></script>
+<script type="text/babel" src="Chart.jsx"></script>
+<script type="text/babel" src="Sidebar.jsx"></script>
+<script type="text/babel" src="Topbar.jsx"></script>
+<script type="text/babel" src="Overview.jsx"></script>
+<script type="text/babel" src="Models.jsx"></script>
+<script type="text/babel" src="Endpoint.jsx"></script>
+<script type="text/babel" src="App.jsx"></script>
+<script type="text/babel" data-presets="react">
+  function mount() {
+    if (!window.HxApp || !window.HelixDesignSystem_6e1999) { setTimeout(mount, 40); return; }
+    ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(window.HxApp));
+  }
+  mount();
+</script>
+</body>
+</html>

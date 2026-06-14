@@ -1,0 +1,24 @@
+<!-- @dsCard group="Brand" viewport="700x240" name="Logomark" subtitle="The H — two DNA twists joined by a solid crossbar" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--bg-app); font-family: var(--font-mono); color: var(--text-faint); padding: 28px; display: flex; gap: 22px; align-items: stretch; }
+  .tile { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; border-radius: var(--radius-lg); border: var(--border-card); padding: 20px; }
+  .tile img { width: 92px; height: 92px; }
+  .lbl { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; }
+  .dark { background: var(--bg-0); }
+  .glow { background: radial-gradient(circle at 50% 45%, rgba(74,222,128,0.10), transparent 70%), var(--bg-0); }
+  .light { background: #f2f3f4; }
+  .light .lbl { color: #888; }
+</style>
+</head>
+<body>
+  <div class="tile dark"><img src="../assets/logo/helix-mark.svg" alt="mark"><span class="lbl">Primary</span></div>
+  <div class="tile glow"><img src="../assets/logo/helix-mark-dark.svg" alt="mark glow" style="width:120px;height:120px"><span class="lbl">App icon / glow</span></div>
+  <div class="tile light"><img src="../assets/logo/helix-mark.svg" alt="mark on light"><span class="lbl">On light</span></div>
+  <div class="tile dark"><img src="../assets/logo/helix-mark-white.svg" alt="mono"><span class="lbl">Mono</span></div>
+</body>
+</html>
