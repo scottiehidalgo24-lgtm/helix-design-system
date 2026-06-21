@@ -228,7 +228,7 @@ export default function OnboardingWizard() {
 
             <div className="text-center pt-2">
               <Link
-                href="/dashboard/registra"
+                href="/registra"
                 className="inline-flex items-center gap-1.5 text-xs font-medium text-[var(--accent)] hover:text-[var(--accent-hover)] transition-colors"
               >
                 <PlusCircle className="h-3.5 w-3.5" />
@@ -376,7 +376,7 @@ export default function OnboardingWizard() {
             {result && (
               <div className="text-center pt-3">
                 <Link
-                  href="/dashboard/miei-agenti"
+                  href="/miei-agenti"
                   onClick={markComplete}
                   className="inline-flex items-center gap-2 rounded-lg bg-[var(--accent)] px-5 py-2.5 text-sm font-semibold text-[var(--text-on-accent)] hover:bg-[var(--accent-hover)] active:bg-[var(--accent-press)] transition-all"
                 >
